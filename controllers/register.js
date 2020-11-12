@@ -1,4 +1,4 @@
-const handleRegister = (knex, bcrypt) => (req, res) => {
+const handleRegister = (req, res, knex, bcrypt) => {
     const { email, name, password } = req.body;
 
     if (!email || !name || !password) {

@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 
 app.post('/signin', (req, res) => { signin.handleSignIn(req, res, knex, bcrypt)})
 
-app.post('/register', register.handleRegister(knex, bcrypt)) // same as above. handleRegister function runs, then req res gets called
+app.post('/register', (req, res) => { register.handleRegister(req, res, knex, bcrypt )}) // same as above. handleRegister function runs, then req res gets called
 
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, knex)})
 
