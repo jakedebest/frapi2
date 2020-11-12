@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "git push && git push heroku main",
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
