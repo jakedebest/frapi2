@@ -11,10 +11,10 @@ const knex = require('knex')({
     }
 });
 
-const register = require('../facerecog/controllers/register.js');
-const signin = require('../facerecog/controllers/signin.js');
-const profile = require('../facerecog/controllers/profile.js');
-const image = require('../facerecog/controllers/image.js');
+const register = require('./facerecog/controllers/register.js');
+const signin = require('./facerecog/controllers/signin.js');
+const profile = require('./facerecog/controllers/profile.js');
+const image = require('./facerecog/controllers/image.js');
 
 const app = express();
 
